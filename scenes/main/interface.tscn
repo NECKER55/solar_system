@@ -1,0 +1,929 @@
+[gd_scene load_steps=13 format=3 uid="uid://cwf4ci8a5u5ff"]
+
+[ext_resource type="Script" path="res://scripts/main/interface.gd" id="1"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2cvfa"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="Animation" id="Animation_j352q"]
+resource_name = "open_close_asteroid_menu"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../create_body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-625, 751), Vector2(10, 751)]
+}
+
+[sub_resource type="Animation" id="Animation_3twri"]
+resource_name = "open_close_earth"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_earth:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_p731i"]
+resource_name = "open_close_jupiter"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_jupiter:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_tjy3o"]
+resource_name = "open_menu"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 135), Vector2(1600, 135)]
+}
+
+[sub_resource type="Animation" id="Animation_qrw34"]
+resource_name = "open_close_neptune"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_neptune:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_0a707"]
+resource_name = "open_close_pluto"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_pluto:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_p4n7i"]
+resource_name = "open_close_saturn"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_saturn:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_8s6hc"]
+resource_name = "open_close_uranus"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../satellites_menu/menu_uranus:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1920, 720), Vector2(1600, 720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mh3is"]
+_data = {
+"open_close_asteroid_menu": SubResource("Animation_j352q"),
+"open_close_earth": SubResource("Animation_3twri"),
+"open_close_jupiter": SubResource("Animation_p731i"),
+"open_close_menu": SubResource("Animation_tjy3o"),
+"open_close_neptune": SubResource("Animation_qrw34"),
+"open_close_pluto": SubResource("Animation_0a707"),
+"open_close_saturn": SubResource("Animation_p4n7i"),
+"open_close_uranus": SubResource("Animation_8s6hc")
+}
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_bfcus"]
+viewport_path = NodePath("SubViewportContainer2/SubViewport")
+
+[node name="interface" type="Node2D"]
+script = ExtResource("1")
+
+[node name="margin" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_right = 2.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="container" type="VBoxContainer" parent="margin"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="margin/container"]
+layout_mode = 2
+
+[node name="label1" type="Label" parent="margin/container/HBoxContainer"]
+layout_mode = 2
+text = "TIME:"
+
+[node name="time" type="Label" parent="margin/container/HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="margin/container"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="margin/container/HBoxContainer2"]
+layout_mode = 2
+text = "POSITION:"
+
+[node name="pos_x" type="Label" parent="margin/container/HBoxContainer2"]
+layout_mode = 2
+
+[node name="pos_y" type="Label" parent="margin/container/HBoxContainer2"]
+layout_mode = 2
+
+[node name="pos_z" type="Label" parent="margin/container/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VSlider" type="VSlider" parent="."]
+offset_left = 44.0
+offset_top = 116.0
+offset_right = 60.0
+offset_bottom = 513.0
+focus_mode = 0
+min_value = 1.0
+max_value = 15.0
+value = 1.0
+scrollable = false
+tick_count = 15
+ticks_on_borders = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 72.0
+offset_top = 112.0
+offset_right = 218.0
+offset_bottom = 513.0
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 century"
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 50 years"
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 10 years"
+
+[node name="Label6" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 5 years"
+
+[node name="Label7" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 2 years"
+
+[node name="Label8" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 year"
+
+[node name="Label9" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 6 months"
+
+[node name="Label10" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 month"
+
+[node name="Label11" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 2 weeks"
+
+[node name="Label12" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 week"
+
+[node name="Label13" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 2 days"
+
+[node name="Label14" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 day"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 hour"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 min"
+
+[node name="Label15" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "1 sec 1 sec"
+
+[node name="menu_planets" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1920.0
+offset_top = 135.0
+offset_right = 1960.0
+offset_bottom = 175.0
+grow_vertical = 2
+size_flags_horizontal = 0
+
+[node name="open_close" type="Button" parent="menu_planets"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.6
+anchor_top = 0.5
+anchor_right = -2.6
+anchor_bottom = 0.5
+offset_left = 104.0
+offset_top = -20.0
+offset_right = 157.0
+offset_bottom = 11.0
+grow_vertical = 2
+rotation = 1.5708
+focus_mode = 1
+text = "menu"
+
+[node name="free_mode" type="Button" parent="menu_planets/open_close"]
+layout_mode = 0
+offset_left = -32.0014
+offset_top = -389.0
+offset_right = 55.9986
+offset_bottom = -358.0
+rotation = -1.57079
+focus_mode = 1
+text = "free mode"
+
+[node name="PanelContainer" type="PanelContainer" parent="menu_planets/open_close"]
+layout_mode = 1
+offset_right = 478.0
+offset_bottom = 346.0
+rotation = -1.57079
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu_planets/open_close/PanelContainer"]
+layout_mode = 2
+
+[node name="sun" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "sun"
+
+[node name="mercury" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "mercury"
+
+[node name="venus" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "venus"
+
+[node name="earth" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "earth"
+
+[node name="mars" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "mars"
+
+[node name="jupiter" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "jupiter"
+
+[node name="saturn" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "saturn"
+
+[node name="uranus" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "uranus"
+
+[node name="neptune" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "neptune"
+
+[node name="pluto" type="Button" parent="menu_planets/open_close/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "pluto
+"
+
+[node name="celestialBody" type="Sprite2D" parent="menu_planets/open_close/PanelContainer"]
+position = Vector2(115.005, 465.999)
+scale = Vector2(0.45, 0.466755)
+texture = SubResource("ViewportTexture_2cvfa")
+
+[node name="go" type="Button" parent="menu_planets/open_close/PanelContainer/celestialBody"]
+offset_left = -28.8889
+offset_top = 201.39
+offset_right = 45.1111
+offset_bottom = 232.39
+focus_mode = 1
+text = "     GO     "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="menu_planets"]
+layout_mode = 2
+offset_left = 230.0
+offset_top = 347.0
+offset_right = 411.0
+offset_bottom = 585.0
+
+[node name="MarginContainer" type="MarginContainer" parent="menu_planets/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu_planets/HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="name" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "name:"
+
+[node name="MarginContainer" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="type" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "type:"
+
+[node name="MarginContainer3" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="radius" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "radius:"
+
+[node name="MarginContainer4" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="distance" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "distance:"
+
+[node name="MarginContainer5" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="mass" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "mass:"
+
+[node name="MarginContainer5" type="MarginContainer" parent="menu_planets/HBoxContainer"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="menu_planets/HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="name" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="type" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="radius" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="distance" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer5" type="MarginContainer" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="mass" type="Label" parent="menu_planets/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="satellites_menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="menu_earth" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_earth"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="moon" type="Button" parent="satellites_menu/menu_earth/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "moon"
+
+[node name="menu_jupiter" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_jupiter"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="callisto" type="Button" parent="satellites_menu/menu_jupiter/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "callisto"
+
+[node name="europa" type="Button" parent="satellites_menu/menu_jupiter/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "europa"
+
+[node name="ganymede" type="Button" parent="satellites_menu/menu_jupiter/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "ganymede"
+
+[node name="io" type="Button" parent="satellites_menu/menu_jupiter/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "io"
+
+[node name="menu_saturn" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_saturn"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="dione" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "dione"
+
+[node name="enceladus" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "enceladus"
+
+[node name="iapetus" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "ganymede"
+
+[node name="mimas" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "mimas"
+
+[node name="rhea" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "rhea"
+
+[node name="titan" type="Button" parent="satellites_menu/menu_saturn/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "titan"
+
+[node name="menu_uranus" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_uranus"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="ariel" type="Button" parent="satellites_menu/menu_uranus/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "ariel"
+
+[node name="miranda" type="Button" parent="satellites_menu/menu_uranus/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "miranda"
+
+[node name="oberon" type="Button" parent="satellites_menu/menu_uranus/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "oberon"
+
+[node name="titania" type="Button" parent="satellites_menu/menu_uranus/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "titania"
+
+[node name="umbriel" type="Button" parent="satellites_menu/menu_uranus/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "umbriel"
+
+[node name="menu_neptune" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_neptune"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="triton" type="Button" parent="satellites_menu/menu_neptune/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "triton"
+
+[node name="menu_pluto" type="Control" parent="satellites_menu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1920.0
+offset_top = 720.0
+offset_right = 1960.0
+offset_bottom = 760.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="satellites_menu/menu_pluto"]
+layout_mode = 2
+offset_right = 478.0
+offset_bottom = 346.0
+
+[node name="charon" type="Button" parent="satellites_menu/menu_pluto/VBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+text = "charon"
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = 2656.0
+offset_top = 512.0
+offset_right = 3168.0
+offset_bottom = 1024.0
+scale = Vector2(0.0707185, 0.0795969)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size_2d_override = Vector2i(512, 512)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="cam" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+cull_mask = 1048064
+
+[node name="viewportLight" type="OmniLight3D" parent="SubViewportContainer/SubViewport/cam"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.357887)
+layers = 512
+light_energy = 0.3
+light_size = 30.0
+
+[node name="scene" type="Control" parent="SubViewportContainer/SubViewport"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="animation" type="AnimationPlayer" parent="."]
+root_node = NodePath("../menu_planets")
+libraries = {
+"": SubResource("AnimationLibrary_mh3is")
+}
+
+[node name="create_body" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -622.0
+offset_top = 760.0
+offset_right = -582.0
+offset_bottom = 800.0
+
+[node name="open_close_asteroid_menu" type="Button" parent="create_body"]
+layout_mode = 0
+offset_left = 619.0
+offset_top = 109.0
+offset_right = 702.0
+offset_bottom = 140.0
+rotation = -1.57079
+scale = Vector2(1.2, 1.16)
+focus_mode = 1
+text = "asteroid"
+
+[node name="Panel" type="Panel" parent="create_body"]
+layout_mode = 2
+offset_left = -8.0
+offset_top = -6.0
+offset_right = 32.0
+offset_bottom = 34.0
+scale = Vector2(15.8, 7.92)
+
+[node name="throw" type="Button" parent="create_body/Panel"]
+layout_mode = 2
+offset_left = 6.4557
+offset_top = 1.76768
+offset_right = 74.4557
+offset_bottom = 32.7677
+scale = Vector2(0.0632911, 0.151516)
+focus_mode = 1
+text = "THROW"
+
+[node name="scree_asteroid" type="Sprite2D" parent="create_body/Panel"]
+position = Vector2(8.41772, 24.1162)
+scale = Vector2(0.0328537, 0.0623528)
+texture = SubResource("ViewportTexture_bfcus")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="create_body"]
+custom_minimum_size = Vector2(270, 0)
+layout_mode = 0
+offset_left = 337.0
+offset_top = 61.0
+offset_right = 377.0
+offset_bottom = 101.0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="create_body/VBoxContainer"]
+custom_minimum_size = Vector2(270, 0)
+layout_mode = 2
+
+[node name="mass" type="Label" parent="create_body/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "MASS:
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="create_body/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="create_body/VBoxContainer"]
+layout_mode = 2
+
+[node name="material" type="Label" parent="create_body/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "MATERIAL:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="create_body/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="VBoxContainer3" type="HBoxContainer" parent="create_body/VBoxContainer"]
+layout_mode = 2
+
+[node name="velocity" type="Label" parent="create_body/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "VELOCITY:"
+
+[node name="mass" type="LineEdit" parent="create_body"]
+layout_mode = 2
+offset_left = 429.0
+offset_top = 59.0
+offset_right = 599.0
+offset_bottom = 90.0
+size_flags_horizontal = 0
+focus_mode = 1
+placeholder_text = "insert kg"
+alignment = 1
+max_length = 20
+editable = false
+clear_button_enabled = true
+
+[node name="material" type="OptionButton" parent="create_body"]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 118.0
+offset_right = 599.0
+offset_bottom = 149.0
+focus_mode = 1
+alignment = 1
+item_count = 2
+selected = 0
+allow_reselect = true
+popup/item_0/text = "stone"
+popup/item_0/id = 0
+popup/item_1/text = "iron"
+popup/item_1/id = 1
+
+[node name="velocity" type="LineEdit" parent="create_body"]
+layout_mode = 2
+offset_left = 429.0
+offset_top = 179.0
+offset_right = 599.0
+offset_bottom = 210.0
+focus_mode = 1
+placeholder_text = "insert km/s"
+alignment = 1
+max_length = 20
+editable = false
+clear_button_enabled = true
+
+[node name="go" type="Button" parent="create_body"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 261.0
+offset_right = 103.0
+offset_bottom = 292.0
+scale = Vector2(1.02785, 1)
+focus_mode = 1
+disabled = true
+text = "GO"
+
+[node name="create_delete" type="Button" parent="create_body"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 261.0
+offset_right = 214.0
+offset_bottom = 292.0
+focus_mode = 1
+text = "CREATE"
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="."]
+offset_left = 2656.0
+offset_top = 578.0
+offset_right = 2696.0
+offset_bottom = 618.0
+scale = Vector2(0.0703773, 0.071028)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer2"]
+handle_input_locally = false
+size_2d_override = Vector2i(512, 512)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="cam" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
+cull_mask = 1047808
+
+[node name="viewport_light" type="OmniLight3D" parent="SubViewportContainer2/SubViewport/cam"]
+layers = 256
+light_energy = 3.0
+light_size = 30.0
+
+[node name="scene" type="Control" parent="SubViewportContainer2/SubViewport"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="object_changed" from="." to="." method="_on_object_changed"]
+[connection signal="value_changed" from="VSlider" to="." method="_on_v_slider_value_changed"]
+[connection signal="pressed" from="menu_planets/open_close" to="." method="_on_open_close_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/free_mode" to="." method="_on_free_mode_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/sun" to="." method="_on_sun_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/mercury" to="." method="_on_mercury_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/venus" to="." method="_on_venus_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/earth" to="." method="_on_earth_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/mars" to="." method="_on_mars_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/jupiter" to="." method="_on_jupiter_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/saturn" to="." method="_on_saturn_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/uranus" to="." method="_on_uranus_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/neptune" to="." method="_on_neptune_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/VBoxContainer/pluto" to="." method="_on_pluto_pressed"]
+[connection signal="pressed" from="menu_planets/open_close/PanelContainer/celestialBody/go" to="." method="_on_go_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_earth/VBoxContainer/moon" to="." method="_on_moon_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_jupiter/VBoxContainer/callisto" to="." method="_on_callisto_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_jupiter/VBoxContainer/europa" to="." method="_on_europa_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_jupiter/VBoxContainer/ganymede" to="." method="_on_ganymede_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_jupiter/VBoxContainer/io" to="." method="_on_io_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/dione" to="." method="_on_dione_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/enceladus" to="." method="_on_enceladus_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/iapetus" to="." method="_on_iapetus_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/mimas" to="." method="_on_mimas_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/rhea" to="." method="_on_rhea_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_saturn/VBoxContainer/titan" to="." method="_on_titan_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_uranus/VBoxContainer/ariel" to="." method="_on_ariel_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_uranus/VBoxContainer/miranda" to="." method="_on_miranda_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_uranus/VBoxContainer/oberon" to="." method="_on_oberon_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_uranus/VBoxContainer/titania" to="." method="_on_titania_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_uranus/VBoxContainer/umbriel" to="." method="_on_umbriel_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_neptune/VBoxContainer/triton" to="." method="_on_triton_pressed"]
+[connection signal="pressed" from="satellites_menu/menu_pluto/VBoxContainer/charon" to="." method="_on_charon_pressed"]
+[connection signal="child_entered_tree" from="SubViewportContainer/SubViewport" to="." method="_on_sub_viewport_child_entered_tree"]
+[connection signal="pressed" from="create_body/open_close_asteroid_menu" to="." method="_on_open_close_asteroid_menu_pressed"]
+[connection signal="pressed" from="create_body/Panel/throw" to="." method="_on_throw_pressed"]
+[connection signal="text_changed" from="create_body/mass" to="." method="_on_mass_text_changed"]
+[connection signal="item_selected" from="create_body/material" to="." method="_on_option_button_item_selected"]
+[connection signal="text_changed" from="create_body/velocity" to="." method="_on_velocity_text_changed"]
+[connection signal="pressed" from="create_body/go" to="." method="_on_go_to_asteroid_pressed"]
+[connection signal="pressed" from="create_body/create_delete" to="." method="_on_create_delete_pressed"]
+[connection signal="child_entered_tree" from="SubViewportContainer2/SubViewport" to="." method="_on_sub_viewport_child_entered_tree"]

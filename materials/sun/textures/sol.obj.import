@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ck02g33sl62t6"
+path="res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh"]
+
+source_file="res://materials/sun/textures/sol.obj"
+dest_files=["res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh", "res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

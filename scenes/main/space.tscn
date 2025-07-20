@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://rth8gjkmvejb"]
+
+[ext_resource type="Script" path="res://scripts/main/space.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/main/cam.gd" id="2_5ulsm"]
+[ext_resource type="Texture2D" uid="uid://v3jwpuou1r1v" path="res://background/sky_sfondo.jpg" id="3_2m3xy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wg0xl"]
+panorama = ExtResource("3_2m3xy")
+
+[sub_resource type="Sky" id="1"]
+sky_material = SubResource("PanoramaSkyMaterial_wg0xl")
+
+[sub_resource type="Environment" id="2"]
+background_mode = 2
+sky = SubResource("1")
+reflected_light_source = 1
+glow_enabled = true
+glow_intensity = 1.5
+glow_hdr_threshold = 0.4
+
+[node name="space" type="Node3D"]
+script = ExtResource("1")
+
+[node name="cam" type="Camera3D" parent="." node_paths=PackedStringArray("space")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 40, 0, 0)
+cull_mask = 1047807
+fov = 70.0
+far = 40000.0
+script = ExtResource("2_5ulsm")
+space = NodePath("..")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("2")
+
+[connection signal="throw" from="cam" to="." method="_on_cam_throw"]

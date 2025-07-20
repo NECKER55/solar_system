@@ -1,0 +1,37 @@
+[gd_scene load_steps=9 format=3 uid="uid://1ik2yixcasib"]
+
+[ext_resource type="Script" path="res://scripts/planets/saturn/saturn.gd" id="1_kt7ht"]
+[ext_resource type="Texture2D" uid="uid://d604u1vmvrhh" path="res://materials/saturn/Saturn Color map.png" id="2_c83ju"]
+[ext_resource type="Texture2D" uid="uid://nbn5h4pt8daa" path="res://materials/saturn/saturn-rings.png" id="2_p60ki"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dvu7t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2knq"]
+albedo_texture = ExtResource("2_c83ju")
+
+[sub_resource type="SphereMesh" id="SphereMesh_bduju"]
+material = SubResource("StandardMaterial3D_g2knq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brb17"]
+albedo_texture = ExtResource("2_p60ki")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gk5fx"]
+material = SubResource("StandardMaterial3D_brb17")
+height = 0.001
+
+[node name="saturn" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_kt7ht")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_dvu7t")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_bduju")
+
+[node name="ring" type="MeshInstance3D" parent="visual"]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 0)
+mesh = SubResource("CylinderMesh_gk5fx")
+
+[node name="cam" type="Node3D" parent="."]

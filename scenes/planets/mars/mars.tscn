@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://bhigapvgiu3gu"]
+
+[ext_resource type="Texture2D" uid="uid://iuvg35ykw5h2" path="res://materials/Mars/textures/mars_1k_color.jpg" id="1_s7sxu"]
+[ext_resource type="Script" path="res://scripts/planets/mars/mars.gd" id="1_uc47e"]
+[ext_resource type="Texture2D" uid="uid://tdkg0ffah0rv" path="res://materials/Mars/textures/mars_1k_topo.jpg" id="2_yqf7b"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_30tte"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbxs1"]
+albedo_texture = ExtResource("1_s7sxu")
+normal_texture = ExtResource("2_yqf7b")
+
+[sub_resource type="SphereMesh" id="SphereMesh_tm05e"]
+material = SubResource("StandardMaterial3D_vbxs1")
+
+[node name="mars" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_uc47e")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_30tte")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_tm05e")
+
+[node name="cam" type="Node3D" parent="."]

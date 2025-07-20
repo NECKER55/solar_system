@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://jd6ccwlw3b17"]
+
+[ext_resource type="Script" path="res://scripts/planets/pluto/pluto&charon_system.gd" id="1_0slsg"]
+
+[node name="pluto_charonSystem" type="Node3D"]
+script = ExtResource("1_0slsg")

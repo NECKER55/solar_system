@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://o6mvvga4nmmw"]
+
+[ext_resource type="Texture2D" uid="uid://l64yss6hwek4" path="res://asteroid/Asteroid2c_Color_2K.png" id="1_6id8n"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_6id8n")

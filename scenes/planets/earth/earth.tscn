@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://cbf5um0cw80o2"]
+
+[ext_resource type="Script" path="res://scripts/planets/earth/earth.gd" id="1_mkmhi"]
+[ext_resource type="Texture2D" uid="uid://btpc2jujfb1uu" path="res://materials/earth/textures/earth albedo.jpg" id="2_tjb54"]
+[ext_resource type="Texture2D" uid="uid://c63hs6ev888i5" path="res://materials/earth/textures/earth night_lights_modified.png" id="3_k6pak"]
+[ext_resource type="Texture2D" uid="uid://d0tym0m7ppwc" path="res://materials/earth/textures/earth bump.jpg" id="4_7qtfs"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nbvkh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlkev"]
+albedo_texture = ExtResource("2_tjb54")
+emission_enabled = true
+emission_texture = ExtResource("3_k6pak")
+normal_texture = ExtResource("4_7qtfs")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ayi6c"]
+lightmap_size_hint = Vector2i(17, 9)
+material = SubResource("StandardMaterial3D_jlkev")
+
+[node name="earth" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_mkmhi")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_nbvkh")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_ayi6c")
+
+[node name="cam" type="Node3D" parent="."]

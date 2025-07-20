@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgl1yhke260bw"]
+
+[ext_resource type="Script" path="res://scripts/planets/neptune/satellites/triton.gd" id="1_72j67"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_ew8f1"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_gixdm"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_l01js"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hg7or"]
+albedo_texture = ExtResource("2_ew8f1")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_gixdm")
+
+[sub_resource type="SphereMesh" id="SphereMesh_babpc"]
+material = SubResource("StandardMaterial3D_hg7or")
+
+[node name="triton" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_72j67")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_l01js")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_babpc")
+
+[node name="cam" type="Node3D" parent="."]

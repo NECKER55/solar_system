@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://c10632vl7kqgd"]
+
+[ext_resource type="Script" path="res://scripts/planets/venus/venus.gd" id="1_8e31k"]
+[ext_resource type="Texture2D" uid="uid://cog5ttbyucmvu" path="res://materials/Venus/textures/venusmap.jpg" id="2_e8gv6"]
+[ext_resource type="Texture2D" uid="uid://dv2pe2trf04la" path="res://materials/Venus/textures/venusbump.jpg" id="3_lhey2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_iyoyy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nspj6"]
+albedo_texture = ExtResource("2_e8gv6")
+normal_texture = ExtResource("3_lhey2")
+
+[sub_resource type="SphereMesh" id="SphereMesh_rc7px"]
+material = SubResource("StandardMaterial3D_nspj6")
+
+[node name="venus" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_8e31k")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_iyoyy")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_rc7px")
+
+[node name="cam" type="Node3D" parent="."]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0ko23vsbgwdd"]
+
+[ext_resource type="Script" path="res://scripts/planets/saturn/satellites/dione.gd" id="1_tcc5l"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_mxdug"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_xinna"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1lnda"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75w5j"]
+albedo_texture = ExtResource("2_mxdug")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_xinna")
+
+[sub_resource type="SphereMesh" id="SphereMesh_27frg"]
+material = SubResource("StandardMaterial3D_75w5j")
+
+[node name="dione" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_tcc5l")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_1lnda")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_27frg")
+
+[node name="cam" type="Node3D" parent="."]

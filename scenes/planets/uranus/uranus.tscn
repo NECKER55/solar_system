@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=3 uid="uid://nhgls2r5npdv"]
+
+[ext_resource type="Script" path="res://scripts/planets/uranus/uranus.gd" id="1_2yx3e"]
+[ext_resource type="Texture2D" uid="uid://d604u1vmvrhh" path="res://materials/saturn/Saturn Color map.png" id="2_h55hw"]
+[ext_resource type="Texture2D" uid="uid://hub3knexpq8y" path="res://materials/saturn/_auto_.png" id="3_gdxf5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_61hxn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvx5g"]
+albedo_texture = ExtResource("2_h55hw")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x7fen"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qs4y5"]
+albedo_texture = SubResource("CompressedTexture2D_x7fen")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ilels"]
+material = SubResource("StandardMaterial3D_qs4y5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21v3u"]
+albedo_texture = ExtResource("3_gdxf5")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nm0iq"]
+material = SubResource("StandardMaterial3D_21v3u")
+top_radius = 1.0
+height = 0.001
+
+[node name="uranus" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_2yx3e")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_61hxn")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_jvx5g")
+mesh = SubResource("SphereMesh_ilels")
+
+[node name="ring" type="MeshInstance3D" parent="visual"]
+mesh = SubResource("CylinderMesh_nm0iq")
+skeleton = NodePath("../..")
+
+[node name="cam" type="Node3D" parent="."]

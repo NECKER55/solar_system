@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4s3yql306txa"]
+
+[ext_resource type="Script" path="res://scripts/planets/uranus/satellites/oberon.gd" id="1_m6vuy"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_p0r7x"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_sqsri"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_b38qy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usokk"]
+albedo_texture = ExtResource("2_p0r7x")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_sqsri")
+
+[sub_resource type="SphereMesh" id="SphereMesh_nb8bo"]
+material = SubResource("StandardMaterial3D_usokk")
+
+[node name="oberon" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_m6vuy")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_b38qy")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_nb8bo")
+
+[node name="cam" type="Node3D" parent="."]
