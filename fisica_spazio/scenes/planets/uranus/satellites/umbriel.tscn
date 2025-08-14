@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpq0u4b0qaec0"]
+
+[ext_resource type="Script" path="res://scripts/planets/uranus/satellites/umbriel.gd" id="1_o7bem"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_lla42"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_gdf8w"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_b38qy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3f5b3"]
+albedo_texture = ExtResource("2_lla42")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_gdf8w")
+
+[sub_resource type="SphereMesh" id="SphereMesh_nb8bo"]
+material = SubResource("StandardMaterial3D_3f5b3")
+
+[node name="umbriel" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_o7bem")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_b38qy")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_nb8bo")
+
+[node name="cam" type="Node3D" parent="."]

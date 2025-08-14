@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3aqwlhhd6fea"]
+
+[ext_resource type="Script" path="res://scripts/planets/earth/satellites/moon.gd" id="1_y8ykp"]
+[ext_resource type="Texture2D" uid="uid://vkpgtrm8135q" path="res://materials/moon/textures/Moon.jpg" id="2_ucieq"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_paj7c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6c6q"]
+albedo_texture = ExtResource("2_ucieq")
+
+[sub_resource type="SphereMesh" id="SphereMesh_0n6n5"]
+material = SubResource("StandardMaterial3D_o6c6q")
+
+[node name="moon" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_y8ykp")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_paj7c")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_0n6n5")
+skeleton = NodePath("../shape")
+
+[node name="cam" type="Node3D" parent="."]

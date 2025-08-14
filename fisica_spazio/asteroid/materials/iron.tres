@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://cvbofnkb8022p"]
+
+[ext_resource type="Texture2D" uid="uid://l64yss6hwek4" path="res://asteroid/Asteroid2c_Color_2K.png" id="1_e42ab"]
+[ext_resource type="Texture2D" uid="uid://dphh3xvybgj40" path="res://asteroid/Asteroid1b _AO_2K.png" id="2_tqlqt"]
+[ext_resource type="Texture2D" uid="uid://bx6ked360elvy" path="res://asteroid/Asteroid1b _Displacement_2K.png" id="3_4lfin"]
+[ext_resource type="Texture2D" uid="uid://ca3kv2p6ph8hn" path="res://asteroid/Asteroid1b _NormalDirectX_2K.png" id="4_rwja1"]
+[ext_resource type="Texture2D" uid="uid://bvcukt2wd34kt" path="res://asteroid/Asteroid1b _Roughness_2K.png" id="5_mv2a7"]
+
+[resource]
+albedo_texture = ExtResource("1_e42ab")
+roughness_texture = ExtResource("5_mv2a7")
+normal_enabled = true
+normal_texture = ExtResource("4_rwja1")
+ao_enabled = true
+ao_texture = ExtResource("2_tqlqt")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_4lfin")

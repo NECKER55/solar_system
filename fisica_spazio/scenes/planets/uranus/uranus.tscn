@@ -1,0 +1,43 @@
+[gd_scene load_steps=11 format=3 uid="uid://nhgls2r5npdv"]
+
+[ext_resource type="Script" uid="uid://bnxakvorms8e2" path="res://scripts/planets/uranus/uranus.gd" id="1_2yx3e"]
+[ext_resource type="Texture2D" uid="uid://c355hwk4ramou" path="res://materials/uranus/13907_Uranus_planet_diff.jpg" id="2_db8yy"]
+[ext_resource type="Texture2D" uid="uid://bmsuaavbtnp0a" path="res://materials/uranus/13907_Uranus_Rings_diff.jpg" id="3_kvuma"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_61hxn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvx5g"]
+albedo_texture = ExtResource("2_db8yy")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x7fen"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qs4y5"]
+albedo_texture = SubResource("CompressedTexture2D_x7fen")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ilels"]
+material = SubResource("StandardMaterial3D_qs4y5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aa08k"]
+albedo_texture = ExtResource("3_kvuma")
+
+[sub_resource type="TorusMesh" id="TorusMesh_krq22"]
+material = SubResource("StandardMaterial3D_aa08k")
+inner_radius = 0.955
+
+[node name="uranus" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_2yx3e")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_61hxn")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_jvx5g")
+mesh = SubResource("SphereMesh_ilels")
+
+[node name="ring" type="MeshInstance3D" parent="visual"]
+mesh = SubResource("TorusMesh_krq22")
+skeleton = NodePath("../..")
+
+[node name="cam" type="Node3D" parent="."]

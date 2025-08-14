@@ -1,0 +1,11 @@
+res://background/default_env.tres
+res://scenes/main/space.tscn
+res://asteroid/materials/stone.tres
+res://scenes/main/interface.tscn
+res://scenes/stars/sun.tscn
+res://scenes/planets/uranus/uranus.tscn
+res://scenes/planets/mars/mars.tscn
+res://scenes/planets/earth/earth.tscn
+res://scenes/planets/venus/venus.tscn
+res://scenes/main/asteroid.tscn
+res://scenes/planets/saturn/saturn.tscn

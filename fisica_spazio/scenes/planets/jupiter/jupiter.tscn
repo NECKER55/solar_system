@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=3 uid="uid://buj8xtux38t7t"]
+
+[ext_resource type="Script" path="res://scripts/planets/jupiter/jupiter.gd" id="1_7il7g"]
+[ext_resource type="Texture2D" uid="uid://btafne844fgnl" path="res://materials/jupiter/Jupiter_8k_Color.jpeg" id="2_br8be"]
+[ext_resource type="Texture2D" uid="uid://dd1y521em8qms" path="res://materials/jupiter/height.bmp" id="3_brq5m"]
+[ext_resource type="Texture2D" uid="uid://nkqluuvch88h" path="res://materials/jupiter/metallic.bmp" id="4_hl4g8"]
+[ext_resource type="Texture2D" uid="uid://bm8c3xg5f1u2v" path="res://materials/jupiter/normel.bmp" id="5_y5a6k"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jsgqp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktfth"]
+albedo_texture = ExtResource("2_br8be")
+metallic_texture = ExtResource("4_hl4g8")
+normal_enabled = true
+normal_texture = ExtResource("5_y5a6k")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_brq5m")
+
+[sub_resource type="SphereMesh" id="SphereMesh_cpgwt"]
+material = SubResource("StandardMaterial3D_ktfth")
+
+[node name="jupiter" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_7il7g")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_jsgqp")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_cpgwt")
+
+[node name="cam" type="Node3D" parent="."]

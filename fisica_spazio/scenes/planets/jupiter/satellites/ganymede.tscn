@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://cuo81n65h6kno"]
+
+[ext_resource type="Script" path="res://scripts/planets/jupiter/satellites/ganymede.gd" id="1_801u3"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_vvjdl"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_ahr1i"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sgyat"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s0k25"]
+albedo_texture = ExtResource("2_vvjdl")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_ahr1i")
+
+[sub_resource type="SphereMesh" id="SphereMesh_dxq0a"]
+material = SubResource("StandardMaterial3D_s0k25")
+
+[node name="ganymede" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_801u3")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_sgyat")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_dxq0a")
+
+[node name="cam" type="Node3D" parent="."]

@@ -1,0 +1,196 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1755170090
+asteroid_idle.gd::GDScript/GDScript::254000924609935925::1741261599::0::1::::<>celestialBody<><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1743863225::0::1::::<><><>0<>0<><>::
+idle.gd::GDScript/GDScript::26754226751944701::1741214976::0::1::::<>celestialBody<><>0<>0<><>::
+prova.gd::GDScript/GDScript::8625506601827887899::1740488392::0::1::::<>Area3D<><>0<>0<><>::
+::res://asteroid/::1743855447
+Asteroid1b _AORM_2K.png::CompressedTexture2D/CompressedTexture2D::5518354340272301495::1741213445::1743855436::1::::<><><>0<>0<>bb3d50d633fb049635c65155029565ac<>res://.godot/imported/Asteroid1b _AORM_2K.png-663dd3215dec1456910517e30955274f.ctex::
+Asteroid1b _AO_2K.png::CompressedTexture2D/CompressedTexture2D::8227021612676889495::1741213445::1743855435::1::::<><><>0<>0<>5456a9365f59a0f36d59e599ba140c3b<>res://.godot/imported/Asteroid1b _AO_2K.png-6516d80098f9fe4e0e7bb3a932d7ab16.s3tc.ctex::
+Asteroid1b _Color_2K.png::CompressedTexture2D/CompressedTexture2D::6805934784016422472::1741213445::1743855435::1::::<><><>0<>0<>befa490b25225c21569e6db6df1a9e86<>res://.godot/imported/Asteroid1b _Color_2K.png-06d68d67d2fa14b765137a00c871cf9c.s3tc.ctex::
+Asteroid1b _Displacement_2K.png::CompressedTexture2D/CompressedTexture2D::4065374313113634462::1741213445::1743855435::1::::<><><>0<>0<>f0de217881c8a71741a57600f8f1ef44<>res://.godot/imported/Asteroid1b _Displacement_2K.png-2a8b7329abe388c8b7bb4e9712c7c5ff.s3tc.ctex::
+Asteroid1b _Metallic_2K.png::CompressedTexture2D/CompressedTexture2D::7325118913692728184::1741213445::1743855435::1::::<><><>0<>0<>362d341f149b205d88fab9e0faa81b71<>res://.godot/imported/Asteroid1b _Metallic_2K.png-e4f27564662dfeda22e131d023d87c3f.s3tc.ctex::
+Asteroid1b _NormalDirectX_2K.png::CompressedTexture2D/CompressedTexture2D::4831290058830920135::1741213445::1743855435::1::::<><><>0<>0<>31dd7bd1b7aaf8a604ba6e32c4a9e8b7<>res://.godot/imported/Asteroid1b _NormalDirectX_2K.png-b6d3d72b7c50ceb152c8ea15377a13ac.s3tc.ctex::
+Asteroid1b _NormalOpenGL_2K.png::CompressedTexture2D/CompressedTexture2D::4202267872407381241::1741213445::1743855436::1::::<><><>0<>0<>891e16872c1e8582a6d571fbb1d31f65<>res://.godot/imported/Asteroid1b _NormalOpenGL_2K.png-ca42db41e64b63d25dfa648b5816488e.ctex::
+Asteroid1b _Roughness_2K.png::CompressedTexture2D/CompressedTexture2D::3865748394052373611::1741213445::1743855435::1::::<><><>0<>0<>74531a68f57674bf432df5ae82042ff1<>res://.godot/imported/Asteroid1b _Roughness_2K.png-1ff070f6535dc303c6f6b9a342acdea4.s3tc.ctex::
+Asteroid2c_Color_2K.png::CompressedTexture2D/CompressedTexture2D::837877616883658497::1741215611::1743855435::1::::<><><>0<>0<>35f5707fbf0cb73141f6a20ee12294b3<>res://.godot/imported/Asteroid2c_Color_2K.png-d62cbcad7c1a9caf40edaf8b07e1b20c.s3tc.ctex::
+Asteroid_1b.fbx::PackedScene/PackedScene::1094291435018217671::1741213503::1743855447::1::::<><><>0<>0<>e733a9f301888fb4b896beaa60b33c2f<>res://.godot/imported/Asteroid_1b.fbx-efba6db95a1ed9eb22d4aa65da4ef44b.scn::
+Asteroid_1b_LOD.fbx::PackedScene/PackedScene::4687808219966064817::1741213445::1743855445::1::::<><><>0<>0<>b0ef1d3cdb29c242e1dd692a99c4a6d3<>res://.godot/imported/Asteroid_1b_LOD.fbx-e1e19165eefe6a6eca7a1d360bd1a469.scn::
+Asteroid_1_LOW_MODEL_.obj::Mesh/Mesh::2186099848183976859::1741214639::1743855443::1::::<><><>0<>0<>abb80a5d319c1304823e109d66800487<>res://.godot/imported/Asteroid_1_LOW_MODEL_.obj-6ef5862bcb1de9ce776e2841656055df.mesh<*>res://.godot/imported/Asteroid_1_LOW_MODEL_.obj-6ef5862bcb1de9ce776e2841656055df.mesh::
+::res://asteroid/materials/::1746777965
+iron.tres::StandardMaterial3D/StandardMaterial3D::6249731126749342217::1741215738::0::1::::<><><>0<>0<><>::uid://l64yss6hwek4::::res://asteroid/Asteroid2c_Color_2K.png<>uid://dphh3xvybgj40::::res://asteroid/Asteroid1b _AO_2K.png<>uid://bx6ked360elvy::::res://asteroid/Asteroid1b _Displacement_2K.png<>uid://ca3kv2p6ph8hn::::res://asteroid/Asteroid1b _NormalDirectX_2K.png<>uid://bvcukt2wd34kt::::res://asteroid/Asteroid1b _Roughness_2K.png
+stone.tres::StandardMaterial3D::1047406739191965334::1746777965::0::1::::<><><>0<>0<><>::uid://l64yss6hwek4::::res://asteroid/Asteroid2c_Color_2K.png
+::res://background/::1746780140
+default_env.tres::Environment::8840804809271692710::1746780140::0::1::::<><><>0<>0<><>::
+HDR_blue_nebulae-1.hdr::CompressedTexture2D/CompressedTexture2D::8673482769329441303::1740581431::1743855437::1::::<><><>0<>0<>91d7157adbe4a5a99165ac3803ceeedd<>res://.godot/imported/HDR_blue_nebulae-1.hdr-369394d969b0d9bd74a0a30979ce7433.ctex::
+sky_sfondo.jpg::CompressedTexture2D/CompressedTexture2D::1532354853323365277::1739804270::1743855442::1::::<><><>0<>0<>adbf89ab8b342b2b5eb60c41dda0eba9<>res://.godot/imported/sky_sfondo.jpg-1aff084e0c4ff7179f0074d0170ac542.s3tc.ctex::
+::res://materials/::1743855470
+uploads_files_658777_Untitled.fbx::PackedScene/PackedScene::5685272340804642684::1741101692::1743855470::1::::<><><>0<>0<>4b15a1eacd439b453fdd058077e6c47e<>res://.godot/imported/uploads_files_658777_Untitled.fbx-7a41e82d30dc3e9e911dd572ba0abb00.scn::
+::res://materials/earth/::1743718639
+::res://materials/earth/textures/::1743855442
+clouds earth.png::CompressedTexture2D/CompressedTexture2D::3396348413363681351::1740340798::1743855437::1::::<><><>0<>0<>07b14b30fe59037d725659a9c3f85d0a<>res://.godot/imported/clouds earth.png-6202a95bc60d8ce8ac4f6eea1be9d6ee.ctex::
+earth albedo.jpg::CompressedTexture2D/CompressedTexture2D::3751144533569488284::1740340798::1743855437::1::::<><><>0<>0<>098c8c4f0e07ff1b73dc9e3cf039af43<>res://.godot/imported/earth albedo.jpg-d79347252a0baa7bfdf09b37c53dc8bd.s3tc.ctex::
+earth bump.jpg::CompressedTexture2D/CompressedTexture2D::263373126170779490::1740340798::1743855441::1::::<><><>0<>0<>c30bc23a86abcb3b3f8a3a6764d97b5a<>res://.godot/imported/earth bump.jpg-4e19b40d16ccf1c0b58d5c56462addd3.s3tc.ctex::
+earth land ocean mask.png::CompressedTexture2D/CompressedTexture2D::7542011881249125912::1740340798::1743855437::1::::<><><>0<>0<>a641d0a46c726f3464cdec209064bd43<>res://.godot/imported/earth land ocean mask.png-4b3d3d3f1af13e66ab03bd5adbe79756.s3tc.ctex::
+earth night_lights_modified.png::CompressedTexture2D/CompressedTexture2D::7006956895921183722::1740340798::1743855442::1::::<><><>0<>0<>9a47b131eacdb95df7e5be3fa230584f<>res://.godot/imported/earth night_lights_modified.png-76cb9089a034dc48124269bbb01bb481.s3tc.ctex::
+::res://materials/jupiter/::1743855440
+height.bmp::CompressedTexture2D/CompressedTexture2D::7425014643736958898::1741089131::1743855436::1::::<><><>0<>0<>f61a85c8fbae63902462be3ec636cf08<>res://.godot/imported/height.bmp-0ca8498f18c4cf2511676d9e8e8fa928.s3tc.ctex::
+Jupiter_8k_Color.jpeg::CompressedTexture2D/CompressedTexture2D::3720335775528843573::1741087709::1743855440::1::::<><><>0<>0<>70b44088d238e9b67c11e51095c94999<>res://.godot/imported/Jupiter_8k_Color.jpeg-9796483b96493bd6dde2da7e630745d1.s3tc.ctex::
+metallic.bmp::CompressedTexture2D/CompressedTexture2D::934090942772458213::1741089122::1743855436::1::::<><><>0<>0<>33d0e191d4636da8af0e592ecfd257fd<>res://.godot/imported/metallic.bmp-b02bbbe917cd7f9b6d6743d2085c3256.s3tc.ctex::
+normel.bmp::CompressedTexture2D/CompressedTexture2D::3296983928125002459::1741100185::1743855436::1::::<><><>0<>0<>afbe2dead2fdd1391e0f87a31305a544<>res://.godot/imported/normel.bmp-5e3386506aef52008362f5fbc4c2a245.s3tc.ctex::
+::res://materials/jupiter/io/::1743855437
+deffuse.bmp::CompressedTexture2D/CompressedTexture2D::21553747454906915::1741100480::1743855437::1::::<><><>0<>0<>a51ada7b05adf50e344abafa04b34687<>res://.godot/imported/deffuse.bmp-1b0632171a73a41aa911b1ca5155f19f.s3tc.ctex::
+Dh_io_texture Surface.png::CompressedTexture2D/CompressedTexture2D::5909126076073995370::1741100401::1743855436::1::::<><><>0<>0<>d7341f36755bfe5ecd570e9c20c7ea72<>res://.godot/imported/Dh_io_texture Surface.png-1501d6834f55f7739249293e1610e3a8.s3tc.ctex::
+height.bmp::CompressedTexture2D/CompressedTexture2D::4877198772749111467::1741100519::1743855436::1::::<><><>0<>0<>46180619c64a46fae94bf80b5d8b97ea<>res://.godot/imported/height.bmp-5eb0419942325cd9a7b6462837c8c367.s3tc.ctex::
+::res://materials/Mars/::1743718641
+::res://materials/Mars/textures/::1743855435
+mars_1k_color.jpg::CompressedTexture2D/CompressedTexture2D::604085593899629393::1740509218::1743855435::1::::<><><>0<>0<>02061d639bdbd80f940dc39d87d4def9<>res://.godot/imported/mars_1k_color.jpg-ca0abbb7205ccfeec3a0c8c43fa5f35b.s3tc.ctex::
+mars_1k_topo.jpg::CompressedTexture2D/CompressedTexture2D::1340400368111146067::1740509218::1743855433::1::::<><><>0<>0<>449051aedb7170696ebe505629251dc0<>res://.godot/imported/mars_1k_topo.jpg-dc030521999ee3b2be958768619fe155.s3tc.ctex::
+::res://materials/mercury/::1743855434
+mercury 8kk.jpg::CompressedTexture2D/CompressedTexture2D::6234011228482045572::1741100791::1743855434::1::::<><><>0<>0<>9f9bbb958ba745054dffdfcffd9d51e3<>res://.godot/imported/mercury 8kk.jpg-e598ff1b043d75b3d10f27f3b98ccf8e.s3tc.ctex::
+::res://materials/moon/::1743718641
+::res://materials/moon/textures/::1743855471
+Moon.fbx::PackedScene/PackedScene::6680697319588810051::1740423976::1743855468::1::::<><><>0<>0<>c58455ae6de8f290b8cde1312fc35c43<>res://.godot/imported/Moon.fbx-3d3072a499c17db3bbc45b4607372c90.scn::uid://ynu412l4n71x::::res://materials/moon/textures/Moon_0.png
+Moon.jpg::CompressedTexture2D/CompressedTexture2D::1495531988389911452::1740423976::1743855434::1::::<><><>0<>0<>35a3372951e840ca0ff85020388253f7<>res://.godot/imported/Moon.jpg-801e745271cc1921d91e8a8c68fdb037.s3tc.ctex::
+Moon_0.png::CompressedTexture2D/CompressedTexture2D::1712636693850040803::1743855454::1743855471::1::::<><><>0<>0<>959631861a575e168c440c9d1b9c39e9<>res://.godot/imported/Moon_0.png-badb46eade91ed7a5080bb763c383aed.s3tc.ctex::
+Moon_displacement.jpg::CompressedTexture2D/CompressedTexture2D::6767623751213364063::1740423976::1743855434::1::::<><><>0<>0<>d404f49fc4bc5844c4a102806c0ed48f<>res://.godot/imported/Moon_displacement.jpg-ef23979c19bce6badab8b28bb7f43281.s3tc.ctex::
+::res://materials/neptune/::1743855444
+13908_Neptune_V2_l3.obj::Mesh/Mesh::6074310493115718275::1740523296::1743855444::1::::<><><>0<>0<>1fb2f25b91e6929953301d2947abccf1<>res://.godot/imported/13908_Neptune_V2_l3.obj-499cdde7fccc2c897e793ad8f057ea1d.mesh<*>res://.godot/imported/13908_Neptune_V2_l3.obj-499cdde7fccc2c897e793ad8f057ea1d.mesh::
+::res://materials/neptune/textures/::1743855433
+13908_Neptune_planet_diff.jpg::CompressedTexture2D/CompressedTexture2D::5916051205383310058::1740523296::1743855433::1::::<><><>0<>0<>3e0a7044bae8e2441583fd3491e326d5<>res://.godot/imported/13908_Neptune_planet_diff.jpg-454779bd442bdcc1f79f1fbf5dff81fc.s3tc.ctex::
+::res://materials/pluto/::1743718644
+::res://materials/pluto/textures/::1743855434
+PlutoColor.png::CompressedTexture2D/CompressedTexture2D::3698538168747705338::1740523956::1743855434::1::::<><><>0<>0<>b1868cd70ed62f512301018fdb3f0810<>res://.godot/imported/PlutoColor.png-c303f68721271aad648fdc4d777cd8c6.s3tc.ctex::
+preview_eris_fictional.jpg::CompressedTexture2D/CompressedTexture2D::7099466761156062422::1740523956::1743855434::1::::<><><>0<>0<>ed9c5fa6179059cdd0b490b939ba5f47<>res://.godot/imported/preview_eris_fictional.jpg-336fdd4474981a22a0f0351e26b5173d.s3tc.ctex::
+::res://materials/saturn/::1743855469
+_auto_1.jpg::CompressedTexture2D/CompressedTexture2D::2909339140533276304::1741101895::1743855434::1::::<><><>0<>0<>af50efabf5ca7c5e7d7d3d507e9b0f89<>res://.godot/imported/_auto_1.jpg-c7d86710f4d307c114c7462191658191.s3tc.ctex::
+_auto_.png::CompressedTexture2D/CompressedTexture2D::532720725298571234::1741101895::1743855433::1::::<><><>0<>0<>e03e23da82053881913c9cec16cb9b3b<>res://.godot/imported/_auto_.png-da842713a0b8817b9ded25a6dc1d15d6.s3tc.ctex::
+Saturn Color map.png::CompressedTexture2D/CompressedTexture2D::276133045735296705::1741102551::1743855434::1::::<><><>0<>0<>ad17701afd34c79b9f3baa8face3ff32<>res://.godot/imported/Saturn Color map.png-7a394c3eb92adca18a4049d0a048158c.s3tc.ctex::
+saturn-rings.png::CompressedTexture2D/CompressedTexture2D::915362652942592996::1741101895::1743855434::1::::<><><>0<>0<>e7aec0c30bcb69b10e5c60a92031714e<>res://.godot/imported/saturn-rings.png-a2dc2f589bba610d2581a2994d875b21.s3tc.ctex::
+saturn_rings.png::CompressedTexture2D/CompressedTexture2D::1732936154501224014::1741101895::1743855434::1::::<><><>0<>0<>21380a9e303b48f7232aadc34e693401<>res://.godot/imported/saturn_rings.png-8ee8d3550b6f2d8d405e87f11982a604.s3tc.ctex::
+uploads_files_658777_Untitled.fbx::PackedScene/PackedScene::2329067791746120058::1741101761::1743855469::1::::<><><>0<>0<>3765a05009f46544ee4e8215aeedec6d<>res://.godot/imported/uploads_files_658777_Untitled.fbx-bc30c297e1e7c6231cc321a78ceb5274.scn::uid://hub3knexpq8y::::res://materials/saturn/_auto_.png<>uid://bhpknjrssxbm3::::res://materials/saturn/_auto_1.jpg
+::res://materials/sun/::1743718640
+::res://materials/sun/textures/::1743855444
+2k_sun.jpg::CompressedTexture2D/CompressedTexture2D::5670432682760678638::1740417966::1743855434::1::::<><><>0<>0<>ce66c1caab71e83e5ff7f2b673c4a4ab<>res://.godot/imported/2k_sun.jpg-3ee36ae3d8b211267be0852b431bc9a7.s3tc.ctex::
+Captura.PNG::CompressedTexture2D/CompressedTexture2D::1114126450944110988::1740417966::1743855434::1::::<><><>0<>0<>f7231318141d06a4c64a6ced66e335c7<>res://.godot/imported/Captura.PNG-7a5fe6d2e15c3016d5641d8df2dfe043.ctex::
+sol.obj::Mesh/Mesh::5527990835928259577::1740417966::1743855444::1::::<><><>0<>0<>f21b92ce982d9f9682948582934c434f<>res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh<*>res://.godot/imported/sol.obj-759c82ee6462d2f957c654e76a4808cb.mesh::
+StarsMap_2500x1250.jpg::CompressedTexture2D/CompressedTexture2D::6858687589470912182::1740417966::1743855435::1::::<><><>0<>0<>84ba1902f63c3daeae5ac0339872f6a8<>res://.godot/imported/StarsMap_2500x1250.jpg-201e3cf749a1ec6fc437b189a7251c82.ctex::
+::res://materials/uranus/::1743855435
+13907_Uranus_planet_diff.jpg::CompressedTexture2D/CompressedTexture2D::6801895504515337040::1741547729::1743855435::1::::<><><>0<>0<>92ce84579785ed7b2ca0acbed370dadc<>res://.godot/imported/13907_Uranus_planet_diff.jpg-31ae85781935cda1430edf44e72e5d0b.s3tc.ctex::
+13907_Uranus_Rings_diff.jpg::CompressedTexture2D/CompressedTexture2D::3267059979290142598::1741547766::1743855435::1::::<><><>0<>0<>3d042ab25b8b061f27c2a9285a61f4ae<>res://.godot/imported/13907_Uranus_Rings_diff.jpg-d26c221887859635f022d308596fa364.s3tc.ctex::
+::res://materials/Venus/::1743718644
+::res://materials/Venus/textures/::1743855446
+uploads_files_4407487_saturn.glb::PackedScene/PackedScene::5235842251105542722::1740574804::1743855446::1::::<><><>0<>0<>929ba4cec6e1e92c91c601eb951aada2<>res://.godot/imported/uploads_files_4407487_saturn.glb-ee57d53bfa02f4760171c9dcb4dd92b7.scn::uid://brwjyvd05rfvr::::res://materials/Venus/textures/uploads_files_4407487_saturn_saturn.jpg<>uid://c30koyt73cr0r::::res://materials/Venus/textures/uploads_files_4407487_saturn_saturn_NM.jpg<>uid://bxaj5r2260on6::::res://materials/Venus/textures/uploads_files_4407487_saturn_saturn Esfera.jpg<>uid://bcwlievadtusq::::res://materials/Venus/textures/uploads_files_4407487_saturn_saturn Esfera_NM.jpg
+uploads_files_4407487_saturn_saturn Esfera.jpg::CompressedTexture2D/CompressedTexture2D::4001365049995744745::1740574804::1743855435::1::::<><><>0<>0<>7ff59505105d8151cda09377ff273fb5<>res://.godot/imported/uploads_files_4407487_saturn_saturn Esfera.jpg-62479b201845e2d8e95ee07855dc9829.s3tc.ctex::
+uploads_files_4407487_saturn_saturn Esfera_NM.jpg::CompressedTexture2D/CompressedTexture2D::2572897097369224012::1740574804::1743855435::1::::<><><>0<>0<>14216869ed944418cb839964827e587e<>res://.godot/imported/uploads_files_4407487_saturn_saturn Esfera_NM.jpg-25d56b0baac2fa4d21d2f64c7588ca92.s3tc.ctex::
+uploads_files_4407487_saturn_saturn.jpg::CompressedTexture2D/CompressedTexture2D::3625637756918998967::1740574807::1743855435::1::::<><><>0<>0<>b29d6850290c7d1936ff0cfe0aae47e4<>res://.godot/imported/uploads_files_4407487_saturn_saturn.jpg-66867261b694f566567f0feac8abc812.s3tc.ctex::
+uploads_files_4407487_saturn_saturn_NM.jpg::CompressedTexture2D/CompressedTexture2D::6790371895548073911::1740574806::1743855435::1::::<><><>0<>0<>8789999f13a480fc1f9dcb2e37273096<>res://.godot/imported/uploads_files_4407487_saturn_saturn_NM.jpg-98d5febf218a8f08032af0452b9d572f.s3tc.ctex::
+venusbump.jpg::CompressedTexture2D/CompressedTexture2D::8689885313166551906::1740526961::1743855435::1::::<><><>0<>0<>dd32cb784fd8cf566bbcc185f33c3bf8<>res://.godot/imported/venusbump.jpg-575c6e46211b0adeb1744b33e99a3b80.s3tc.ctex::
+venusmap.jpg::CompressedTexture2D/CompressedTexture2D::5769727885315928350::1740526961::1743855435::1::::<><><>0<>0<>b4f3cd85d857af84a8ef8b127fa2aa27<>res://.godot/imported/venusmap.jpg-1d92433284eafedc43a425b6238d62a8.s3tc.ctex::
+::res://scenes/::1743718639
+::res://scenes/main/::1746780140
+asteroid.tscn::PackedScene::3826213556177035052::1746780140::0::1::::<><><>0<>0<><>::uid://cnamr5ratt2q5::::res://scripts/classes/asteroid.gd<>uid://6e70llwro7et::::res://asteroid/Asteroid_1_LOW_MODEL_.obj<>uid://o6mvvga4nmmw::::res://asteroid/materials/stone.tres
+interface.tscn::PackedScene::6329082651777508583::1746780139::0::1::::<><><>0<>0<><>::uid://mgp4ey2jwevs::::res://scripts/main/interface.gd
+space.tscn::PackedScene::1232917798836474283::1746780139::0::1::::<><><>0<>0<><>::uid://ck25it5wgofxj::::res://scripts/main/space.gd<>uid://s4xaka6bxyku::::res://scripts/main/cam.gd<>uid://v3jwpuou1r1v::::res://background/sky_sfondo.jpg
+::res://scenes/planets/::1743718641
+::res://scenes/planets/earth/::1746780140
+earth.tscn::PackedScene::4855209994477534019::1746780140::0::1::::<><><>0<>0<><>::uid://cn5hq8qtg5ves::::res://scripts/planets/earth/earth.gd<>uid://btpc2jujfb1uu::::res://materials/earth/textures/earth albedo.jpg<>uid://c63hs6ev888i5::::res://materials/earth/textures/earth night_lights_modified.png<>uid://d0tym0m7ppwc::::res://materials/earth/textures/earth bump.jpg
+::res://scenes/planets/earth/satellites/::1743718641
+moon.tscn::PackedScene/PackedScene::4352719653801942756::1741000242::0::1::::<><><>0<>0<><>::res://scripts/planets/earth/satellites/moon.gd<>uid://vkpgtrm8135q::::res://materials/moon/textures/Moon.jpg
+::res://scenes/planets/jupiter/::1743718641
+jupiter.tscn::PackedScene/PackedScene::3810822720184885959::1741103584::0::1::::<><><>0<>0<><>::res://scripts/planets/jupiter/jupiter.gd<>uid://btafne844fgnl::::res://materials/jupiter/Jupiter_8k_Color.jpeg<>uid://dd1y521em8qms::::res://materials/jupiter/height.bmp<>uid://nkqluuvch88h::::res://materials/jupiter/metallic.bmp<>uid://bm8c3xg5f1u2v::::res://materials/jupiter/normel.bmp
+::res://scenes/planets/jupiter/satellites/::1743718641
+callisto.tscn::PackedScene/PackedScene::8509232465196153490::1741103050::0::1::::<><><>0<>0<><>::res://scripts/planets/jupiter/satellites/callisto.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+europa.tscn::PackedScene/PackedScene::3123748940817595888::1741103049::0::1::::<><><>0<>0<><>::res://scripts/planets/jupiter/satellites/europa.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+ganymede.tscn::PackedScene/PackedScene::6207570352172643544::1741103049::0::1::::<><><>0<>0<><>::res://scripts/planets/jupiter/satellites/ganymede.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+io.tscn::PackedScene/PackedScene::483548071315602745::1741103049::0::1::::<><><>0<>0<><>::res://scripts/planets/jupiter/satellites/io.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+::res://scenes/planets/mars/::1746780140
+mars.tscn::PackedScene::2894622733723671536::1746780140::0::1::::<><><>0<>0<><>::uid://iuvg35ykw5h2::::res://materials/Mars/textures/mars_1k_color.jpg<>uid://c7ocffy2f3n::::res://scripts/planets/mars/mars.gd<>uid://tdkg0ffah0rv::::res://materials/Mars/textures/mars_1k_topo.jpg
+::res://scenes/planets/mercury/::1743718641
+mercury.tscn::PackedScene/PackedScene::2104121012294571838::1741103584::0::1::::<><><>0<>0<><>::res://scripts/planets/mercury/mercury.gd<>uid://cu22iv1ovfvo3::::res://materials/mercury/mercury 8kk.jpg
+::res://scenes/planets/neptune/::1743718641
+neptune.tscn::PackedScene/PackedScene::3765167659705217159::1741000661::0::1::::<><><>0<>0<><>::res://scripts/planets/neptune/neptune.gd<>uid://cqj1q737x60p7::::res://materials/neptune/textures/13908_Neptune_planet_diff.jpg
+::res://scenes/planets/neptune/satellites/::1743718641
+triton.tscn::PackedScene/PackedScene::7604725152398365892::1741103584::0::1::::<><><>0<>0<><>::res://scripts/planets/neptune/satellites/triton.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+::res://scenes/planets/plutoSystem/::1743718641
+charon.tscn::PackedScene/PackedScene::6708603589911428788::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/pluto/charon.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+pluto.tscn::PackedScene/PackedScene::8652781943271043923::1741000743::0::1::::<><><>0<>0<><>::uid://bsxunbcjvpub7::::res://materials/pluto/textures/PlutoColor.png<>res://scripts/planets/pluto/pluto.gd<>uid://c8fbgeo7kiube::::res://materials/pluto/textures/preview_eris_fictional.jpg
+pluto_charon_system.tscn::PackedScene/PackedScene::639778663930730040::1741103584::0::1::::<><><>0<>0<><>::res://scripts/planets/pluto/pluto&charon_system.gd
+::res://scenes/planets/saturn/::1746780140
+saturn.tscn::PackedScene::1842081616950964313::1746780140::0::1::::<><><>0<>0<><>::uid://d2dqljbflvgqn::::res://scripts/planets/saturn/saturn.gd<>uid://d604u1vmvrhh::::res://materials/saturn/Saturn Color map.png<>uid://nbn5h4pt8daa::::res://materials/saturn/saturn-rings.png
+::res://scenes/planets/saturn/satellites/::1743718641
+dione.tscn::PackedScene/PackedScene::8935526677819005313::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/dione.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+enceladus.tscn::PackedScene/PackedScene::5323000013078358007::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/enceladus.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+iapetus.tscn::PackedScene/PackedScene::3001075720839934742::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/iapetus.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+mimas.tscn::PackedScene/PackedScene::7515946181929194270::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/mimas.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+rhea.tscn::PackedScene/PackedScene::7598631379845022918::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/rhea.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+titan.tscn::PackedScene/PackedScene::4539614284315694561::1741103585::0::1::::<><><>0<>0<><>::res://scripts/planets/saturn/satellites/titan.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+::res://scenes/planets/uranus/::1746780140
+uranus.tscn::PackedScene::927290545205434591::1746780140::0::1::::<><><>0<>0<><>::uid://bnxakvorms8e2::::res://scripts/planets/uranus/uranus.gd<>uid://c355hwk4ramou::::res://materials/uranus/13907_Uranus_planet_diff.jpg<>uid://bmsuaavbtnp0a::::res://materials/uranus/13907_Uranus_Rings_diff.jpg
+::res://scenes/planets/uranus/satellites/::1743718641
+ariel.tscn::PackedScene/PackedScene::1002877533894690035::1741103048::0::1::::<><><>0<>0<><>::res://scripts/planets/uranus/satellites/ariel.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+miranda.tscn::PackedScene/PackedScene::8744620410558079742::1741103049::0::1::::<><><>0<>0<><>::res://scripts/planets/uranus/satellites/miranda.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+oberon.tscn::PackedScene/PackedScene::6847220425986688034::1741103048::0::1::::<><><>0<>0<><>::res://scripts/planets/uranus/satellites/oberon.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+titania.tscn::PackedScene/PackedScene::1608155774354679044::1741103048::0::1::::<><><>0<>0<><>::res://scripts/planets/uranus/satellites/titania.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+umbriel.tscn::PackedScene/PackedScene::3473838548905033037::1741103049::0::1::::<><><>0<>0<><>::res://scripts/planets/uranus/satellites/umbriel.gd<>uid://cqgopcjel6k71::::res://materials/jupiter/io/Dh_io_texture Surface.png<>uid://cbqs0sn6xm6nf::::res://materials/jupiter/io/height.bmp
+::res://scenes/planets/venus/::1746780140
+venus.tscn::PackedScene::6651294425945946751::1746780140::0::1::::<><><>0<>0<><>::uid://b3ish5wj4654x::::res://scripts/planets/venus/venus.gd<>uid://cog5ttbyucmvu::::res://materials/Venus/textures/venusmap.jpg<>uid://dv2pe2trf04la::::res://materials/Venus/textures/venusbump.jpg
+::res://scenes/stars/::1746780140
+sun.tscn::PackedScene::6238871241638635702::1746780140::0::1::::<><><>0<>0<><>::uid://ocbxv3fe2vsg::::res://scripts/stars/sun.gd<>uid://cm12gyxj8mng5::::res://materials/sun/textures/2k_sun.jpg
+::res://scripts/::1743718639
+::res://scripts/classes/::1746780139
+asteroid.gd::GDScript::5686056899078552242::1746780139::0::1::::<>Area3D<><>0<>0<><>::
+celestailBody.gd::GDScript/GDScript::8700913984787078388::1746742919::0::1::::celestialBody<>Node3D<><>0<>0<><>::
+GLOBAL.gd::GDScript/GDScript::6595185559732333235::1741562986::0::1::::<>Node<><>0<>0<><>::
+planet.gd::GDScript/GDScript::3807702337444343797::1743855570::0::1::::planet<>celestialBody<><>0<>0<><>::
+satellite.gd::GDScript/GDScript::8161127441089772034::1741562426::0::1::::satellite<>celestialBody<><>0<>0<><>::
+star.gd::GDScript/GDScript::6249395577572868830::1741464349::0::1::::star<>celestialBody<><>0<>0<><>::
+::res://scripts/main/::1746740143
+cam.gd::GDScript/GDScript::1324663157830213104::1741562426::0::1::::<>Camera3D<><>0<>0<><>::
+interface.gd::GDScript/GDScript::855615181503846284::1746740143::0::1::::<>Node2D<><>0<>0<><>::
+space.gd::GDScript/GDScript::5532304844556312379::1741621664::0::1::::<>Node3D<><>0<>0<><>::
+::res://scripts/planets/::1743718641
+::res://scripts/planets/earth/::1743855413
+earth.gd::GDScript/GDScript::5747683017814179998::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/earth/satellites/::1743855413
+moon.gd::GDScript/GDScript::8256597269469783015::1741464876::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/jupiter/::1743855413
+jupiter.gd::GDScript/GDScript::5585188377775466444::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/jupiter/satellites/::1743855413
+callisto.gd::GDScript/GDScript::6674107573825792219::1741599261::0::1::::<>satellite<><>0<>0<><>::
+europa.gd::GDScript/GDScript::3616463580098296170::1741599261::0::1::::<>satellite<><>0<>0<><>::
+ganymede.gd::GDScript/GDScript::5367102590007835470::1741599261::0::1::::<>satellite<><>0<>0<><>::
+io.gd::GDScript/GDScript::8713957217761461771::1741599261::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/mars/::1743855413
+mars.gd::GDScript/GDScript::6096813422354449::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/mercury/::1743855413
+mercury.gd::GDScript/GDScript::337460614562457131::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/neptune/::1743855413
+neptune.gd::GDScript/GDScript::1397684652414262741::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/neptune/satellites/::1743855413
+triton.gd::GDScript/GDScript::3122761260447022994::1741600238::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/pluto/::1743855413
+charon.gd::GDScript/GDScript::8657496484187142630::1741464944::0::1::::<>satellite<><>0<>0<><>::
+pluto&charon_system.gd::GDScript/GDScript::6164159082497849726::1740931443::0::1::::<>planet<><>0<>0<><>::
+pluto.gd::GDScript/GDScript::9091322305702445704::1741563913::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/saturn/::1743855413
+saturn.gd::GDScript/GDScript::9061545552683239549::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/saturn/satellites/::1743855413
+dione.gd::GDScript/GDScript::2624022771135022984::1741599261::0::1::::<>satellite<><>0<>0<><>::
+enceladus.gd::GDScript/GDScript::3611445142517429::1741599261::0::1::::<>satellite<><>0<>0<><>::
+iapetus.gd::GDScript/GDScript::431626499428915733::1741599261::0::1::::<>satellite<><>0<>0<><>::
+mimas.gd::GDScript/GDScript::1030393588671655352::1741600238::0::1::::<>satellite<><>0<>0<><>::
+rhea.gd::GDScript/GDScript::4082502132732244280::1741599261::0::1::::<>satellite<><>0<>0<><>::
+titan.gd::GDScript/GDScript::5374013751861375186::1741599261::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/uranus/::1743855413
+uranus.gd::GDScript/GDScript::3346375322676744727::1741563913::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/planets/uranus/satellites/::1743855413
+ariel.gd::GDScript/GDScript::1494338882894760851::1741602208::0::1::::<>satellite<><>0<>0<><>::
+miranda.gd::GDScript/GDScript::8636375943485971366::1741602208::0::1::::<>satellite<><>0<>0<><>::
+oberon.gd::GDScript/GDScript::3309994263680049354::1741602208::0::1::::<>satellite<><>0<>0<><>::
+titania.gd::GDScript/GDScript::1614536959894642872::1741602208::0::1::::<>satellite<><>0<>0<><>::
+umbriel.gd::GDScript/GDScript::5679361884056859182::1741602208::0::1::::<>satellite<><>0<>0<><>::
+::res://scripts/planets/venus/::1743855571
+venus.gd::GDScript/GDScript::4369330344152744785::1743855571::0::1::::<>planet<><>0<>0<><>::
+::res://scripts/stars/::1743855413
+sun.gd::GDScript/GDScript::986875503171637238::1741546242::0::1::::<>star<><>0<>0<><>::

@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://btv405ap0yhfr"]
+
+[ext_resource type="Script" path="res://scripts/planets/neptune/neptune.gd" id="1_1fwxb"]
+[ext_resource type="Texture2D" uid="uid://cqj1q737x60p7" path="res://materials/neptune/textures/13908_Neptune_planet_diff.jpg" id="1_snkgv"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qp7vl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ishp"]
+albedo_texture = ExtResource("1_snkgv")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ndhy2"]
+material = SubResource("StandardMaterial3D_2ishp")
+
+[node name="neptune" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_1fwxb")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_qp7vl")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_ndhy2")
+
+[node name="cam" type="Node3D" parent="."]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkrfxodqj5s0w"]
+
+[ext_resource type="Script" path="res://scripts/planets/jupiter/satellites/europa.gd" id="1_vmnil"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_8tu0b"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_lbxb2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vidc8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_02ki0"]
+albedo_texture = ExtResource("2_8tu0b")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_lbxb2")
+
+[sub_resource type="SphereMesh" id="SphereMesh_pj2l6"]
+material = SubResource("StandardMaterial3D_02ki0")
+
+[node name="europa" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_vmnil")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_vidc8")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_pj2l6")
+
+[node name="cam" type="Node3D" parent="."]

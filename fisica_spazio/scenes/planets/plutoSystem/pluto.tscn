@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvjqb354jtorr"]
+
+[ext_resource type="Texture2D" uid="uid://bsxunbcjvpub7" path="res://materials/pluto/textures/PlutoColor.png" id="1_a7to4"]
+[ext_resource type="Script" path="res://scripts/planets/pluto/pluto.gd" id="1_uvxfa"]
+[ext_resource type="Texture2D" uid="uid://c8fbgeo7kiube" path="res://materials/pluto/textures/preview_eris_fictional.jpg" id="2_vd5il"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_unfv4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urg3p"]
+albedo_texture = ExtResource("1_a7to4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hccxu"]
+albedo_texture = ExtResource("2_vd5il")
+normal_enabled = true
+normal_texture = ExtResource("2_vd5il")
+
+[sub_resource type="SphereMesh" id="SphereMesh_5haag"]
+material = SubResource("StandardMaterial3D_hccxu")
+
+[node name="pluto" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_uvxfa")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_unfv4")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_urg3p")
+mesh = SubResource("SphereMesh_5haag")
+
+[node name="cam" type="Node3D" parent="."]

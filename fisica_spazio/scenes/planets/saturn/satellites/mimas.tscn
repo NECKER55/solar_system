@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfc1shcgr0r7c"]
+
+[ext_resource type="Script" path="res://scripts/planets/saturn/satellites/mimas.gd" id="1_j6tfa"]
+[ext_resource type="Texture2D" uid="uid://cqgopcjel6k71" path="res://materials/jupiter/io/Dh_io_texture Surface.png" id="2_50nb2"]
+[ext_resource type="Texture2D" uid="uid://cbqs0sn6xm6nf" path="res://materials/jupiter/io/height.bmp" id="3_y2c5v"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1lnda"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1vhr"]
+albedo_texture = ExtResource("2_50nb2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_y2c5v")
+
+[sub_resource type="SphereMesh" id="SphereMesh_27frg"]
+material = SubResource("StandardMaterial3D_p1vhr")
+
+[node name="mimas" type="Area3D" node_paths=PackedStringArray("texture", "cam")]
+script = ExtResource("1_j6tfa")
+texture = NodePath("visual")
+cam = NodePath("cam")
+
+[node name="shape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_1lnda")
+
+[node name="visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_27frg")
+
+[node name="cam" type="Node3D" parent="."]

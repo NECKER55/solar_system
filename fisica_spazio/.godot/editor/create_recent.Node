@@ -1,0 +1,14 @@
+Label
+Control
+Button
+Panel
+OmniLight3D
+DirectionalLight3D
+Node3D
+MeshInstance3D
+CollisionShape3D
+Area3D
+OptionButton
+LineEdit
+HBoxContainer
+MarginContainer
