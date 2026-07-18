@@ -3,3 +3,7 @@
 *.hdr filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
+
+# I screenshot del README restano blob git normali: sono piccoli e vanno
+# serviti da GitHub senza dipendere dalla banda LFS.
+docs/images/** -filter -diff -merge -text
